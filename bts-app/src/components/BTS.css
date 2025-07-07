@@ -1,0 +1,5 @@
+.container {
+    display: flex;
+    /* 화면의 크기에 따라 줄바꿈 */
+    flex-wrap: wrap;
+}

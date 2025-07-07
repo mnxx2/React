@@ -1,0 +1,19 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  /* body 전체에 스크롤바 없앰 */
+  /* overflow: hidden; */
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100vh;
+}

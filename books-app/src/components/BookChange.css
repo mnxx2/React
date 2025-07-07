@@ -1,0 +1,28 @@
+.book-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+button {
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    background-color: linen;
+    border-radius: 5px;
+    color: #333;
+}
+
+button:hover {
+    background-color: bisque;
+}

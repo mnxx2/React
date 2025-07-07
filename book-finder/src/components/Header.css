@@ -1,0 +1,14 @@
+header {
+    text-align: center;
+    /* root 요소의 크기를 기준으로 설정 */
+    padding: 0.5rem;
+    font-size: 2rem;
+    background-color: lightblue;
+}
+
+h1 {
+    /* 부모 요소의 크기를 기준으로 설정 */
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
+}

@@ -1,0 +1,6 @@
+.container {
+    display: flex;
+    gap: 1rem;
+    /* 화면 크기에 따라 줄바꿈 */
+    flex-wrap: wrap;
+}

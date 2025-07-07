@@ -1,0 +1,20 @@
+# macOS 시스템 파일
+.DS_Store
+
+# node modules (모든 하위 CRA 폴더 포함)
+**/node_modules/
+
+# CRA build/dist 폴더
+**/build/
+**/dist/
+
+# 환경 설정
+**/.env
+**/.env.*
+
+# IDE 설정
+.vscode/
+.idea/
+
+# 로그
+*.log

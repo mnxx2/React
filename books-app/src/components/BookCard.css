@@ -1,0 +1,71 @@
+.book-card {
+    margin: 0rem;
+    padding: 0rem;
+    width : 18rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    /* 교차축에서 각 아이템을 한줄 기준으로 정렬
+        한 줄의 아이템이 적용 대상이지만 여러 줄이어도 적용된다 */
+    align-items: center;
+    /* 전체 줄 묶음을 교차 축에서 정렬
+        여러 줄의 아이템(라인 전체)에 적용되며 여러 줄일때만 의미가 있다 */
+    align-content: center;
+    /* item을 행으로 정렬 */
+    flex-direction: column;
+    background-color: #ebebeb;
+    border-radius: 1rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    gap: 0;
+    /* 애니메이션 시간/속도 부여 */
+    transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.book-title {
+    /* align-itmes와 충돌이 일어나 overflow가 무시됨
+        따라서 해당 박스의 길이를 모두 사용하기 위해 100% 부여 */
+    width: 100%;
+    margin: 0.5rem 1rem;
+    font-size: 1.2rem;
+    /* nowrap : 줄바꿈이 안됨 */
+    white-space: nowrap;
+    /* 박스 밖으로 넘치는 요소 자름 */
+    overflow: hidden;
+    /* 잘리는 부분의 텍스트를 줄임표로 표시 */
+    text-overflow: ellipsis;
+    font-weight: bold;
+    padding: 0 1rem;
+    /* 박스의 사이즈를 border의 사이즈에 맞춤
+        이미지와 동일한 폭을 가지게 됨*/
+    box-sizing: border-box;
+}
+
+.book-image {
+    width: 16rem;
+    margin: 0 1rem;
+}
+
+.book-summary {
+    font-size: small;
+    /* left : 물리적 위치
+        start : 로컬의 언어 시작 기준에 따라 달라진다 */
+    text-align: start;
+    width: 16rem;
+}
+
+.book-price {
+    margin-top: 0;
+    /* box의 길이를 모두 사용해 text-align: end 속성 적용 */
+    width: 100%;
+    text-align: end;
+    color: red;
+    font-size: small;
+    padding-right: 2rem;
+}

@@ -1,0 +1,6 @@
+.book-detail {
+  background-color: beige;
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+}

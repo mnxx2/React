@@ -1,0 +1,39 @@
+.member-card {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 10rem;
+    min-height: 15rem;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ebebeb;
+    border-radius: 1rem;
+    box-shadow: 0.25rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+    gap: 0;
+}
+
+.photo {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    /* 요소를 어떻게 자를지 결정 */
+    object-fit: cover;
+    /* 요소의 보여줄 위치 기준 설정 */
+    object-position: top;
+}
+
+.nick {
+    margin: 1rem;
+    padding: 0;
+}
+
+.team {
+    margin: 0;
+    padding: 0;
+    font-size: large;
+    /* font-weight: 숫자로 할 경우 높을수록 굵어짐 100:얇음 400:일반 700:bold */
+    font-weight: bold;
+    color: blue;
+}
